@@ -1,0 +1,148 @@
+html, body{
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+}
+html {
+    align-items: center;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 60%;
+    max-width: 60%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    margin: 0;
+    gap: 20px;
+}
+
+    .header{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    border-radius: 8px;
+}
+
+
+.header__logo{
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.header__nav__list {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.header__nav__list__li{
+    display: inline;
+}
+
+.header__nav__list__li__link {
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.header__nav__list__li__link:hover{
+    text-decoration: underline;
+}
+
+a.header__nav__list__li__link--plans {
+    letter-spacing: 1px;
+    color: black;
+    background-color: rgb(206, 252, 0);
+    pointer-events: none;
+}
+
+main {
+    flex-direction: column;
+    align-items: space-evenly;
+    /* height: 100%; */
+    display: flex;
+    gap: 20px;
+}
+
+h1{
+    text-align: center;
+    font-size: 70px;
+    text-transform: uppercase;  
+}
+
+.cards {
+    display: flex;
+    flex-grow: 1;
+    gap: 16px;
+}
+
+.cards__item{
+    padding: 35px;
+    flex-grow: 1;
+    /* height: 80%; */
+    background-color: #1f262c;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px -6px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards__item__h2{
+    margin-top: 0;
+    padding-bottom: 15px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 3px solid rgb(206, 252, 0);
+}
+
+.cards__item P {
+    margin-top: 0;
+}
+
+.cards__item__price{
+    font-size: 45px;
+    display: inline;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cards__item__list {
+    margin: 0 0 35px;
+    line-height: 2.0;
+    padding-left: 16px;
+    color: #b5b5b5;
+    flex-grow: 1;
+}
+
+.cards__item__list li::marker{
+    color: #cbe300;
+}
+
+.cards__item__button {
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 16px 10px;
+    background-color: #cbe300;
+    border-radius: 6px;
+    color: #0c1014;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.cards__item__button:hover{
+    color: white;
+    outline: 2px solid #879601;
+    background-color: transparent;
+}
