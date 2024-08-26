@@ -121,7 +121,6 @@ h1{
     line-height: 2.0;
     padding-left: 16px;
     color: #b5b5b5;
-    flex-grow: 1;
 }
 
 .cards__item__list li::marker{
@@ -129,6 +128,7 @@ h1{
 }
 
 .cards__item__button {
+    margin-block-start: auto;
     font-size: 18px;
     text-align: center;
     letter-spacing: 1px;
